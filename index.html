@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> login </title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            background-color: #2a32a1;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="formulario">
+
+        <h2>Formulario</h2>
+        <fieldset>
+            <label>Correo electronico</label>
+            <br>
+            <input type="email" v-model="email" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <label>Contraseña</label>
+            <br>
+            <input type="password" v-model="password" required>
+            <br>
+            <br>
+            <button type="submit">Ingresar</button>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <div class="categoria administrador">
+                <input type="checkbox" id="admin">
+                <label for="admin">Administrador</label>
+              </div>
+        
+              <div class="categoria gerente">
+                <input type="checkbox" id="gerente">
+                <label for="gerente">Gerente</label>
+              </div>
+        
+              <div class="categoria propietario">
+                <input type="checkbox" id="propietario">
+                <label for="propietario">Propietario</label>
+              </div>
+        
+              <div class="categoria ventas">
+                <input type="checkbox" id="ventas">
+                <label for="ventas">Agente de ventas</label>
+              </div>
+        
+              <div class="categoria prospecto">
+                <input type="checkbox" id="prospecto">
+                <label for="prospecto">Prospecto</label>
+              </div>
+        </fieldset>
+
+        <br>
+
+        <a href="#" class="myButton">¿Olvidaste la contraseña?</a>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+@background-form: #914eac;  
+@text-color: rgb(0, 0, 0);   
+@border-color: #000000;    
+@button-bg: white;         
+@forgot-color: blue;       
+
+
+@color-administrador: #4A90E2;
+@color-gerente: #50E3C2;
+@color-propietario: #7BCA85;
+@color-ventas: #F5A623;
+@color-prospecto: #D0021B;
+
+.formulario {
+  background-color: @background-form;
+  border: 2px solid @border-color;
+  padding: 20px;
+  width: 350px;
+  margin: 20px auto;
+  text-align: center;
+
+  h2 {
+    color: @text-color;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  label {
+    color: @text-color;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="email"], input[type="password"] {
+    padding: 5px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #ffffff 5%, #0545cf 100%);
+	background-color:#ffffff;
+	border-radius:10px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #020714;
+  }
+
+  a {
+    color: @forgot-color;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .categoria {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+
+    label {
+      font-weight: bold;
+    }
+//Colores de los checkbox ya asignados
+    &.administrador {
+      background-color: @color-administrador;
+    }
+    &.gerente {
+      background-color: @color-gerente;
+    }
+    &.propietario {
+      background-color: @color-propietario;
+    }
+    &.ventas {
+      background-color: @color-ventas;
+    }
+    &.prospecto {
+      background-color: @color-prospecto;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  }
+}

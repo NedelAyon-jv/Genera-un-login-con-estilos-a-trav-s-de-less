@@ -1,0 +1,74 @@
+.formulario {
+  background-color: #914eac;
+  border: 2px solid #000000;
+  padding: 20px;
+  width: 350px;
+  margin: 20px auto;
+  text-align: center;
+}
+.formulario h2 {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.formulario fieldset {
+  border: none;
+}
+.formulario label {
+  color: #000000;
+  display: block;
+  margin-bottom: 5px;
+}
+.formulario input[type="email"],
+.formulario input[type="password"] {
+  padding: 5px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+.formulario button {
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  background: linear-gradient(to bottom, #ffffff 5%, #0545cf 100%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 19px;
+  padding: 12px 37px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #020714;
+}
+.formulario a {
+  color: blue;
+  display: block;
+  margin-top: 10px;
+}
+.formulario .categoria {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.formulario .categoria label {
+  font-weight: bold;
+}
+.formulario .categoria.administrador {
+  background-color: #4A90E2;
+}
+.formulario .categoria.gerente {
+  background-color: #50E3C2;
+}
+.formulario .categoria.propietario {
+  background-color: #7BCA85;
+}
+.formulario .categoria.ventas {
+  background-color: #F5A623;
+}
+.formulario .categoria.prospecto {
+  background-color: #D0021B;
+}
+.formulario .categoria input[type="checkbox"] {
+  margin-right: 10px;
+}
